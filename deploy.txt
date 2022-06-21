@@ -1,0 +1,40 @@
+installer o firebase-tools
+npm install -g firebase-tools
+
+depois escrever esse comando no terminal
+
+firebase login
+passo a passo:
+
+Y -> (apertar y) sim permitir que o firebase colete informações
+faça login
+
+digite no terminal
+firebase init
+
+selecione: realtime Database, e hosting   (selecione o que vc usou no projeto)
+
+selecione: projeto novo ou já existente(se for esse o caso seleciona na proxima tela)
+
+novo do arquivo para definir as regras do realtime database (deixe o padrão mesmo: database.rules.json)
+
+diretorio publico? escreva "build" o create-react-app utiliza esse diretorio publico 
+Y para spa
+deploys with github (sua escolha. selecione isso se vc quer integrar seu projeto com o github e fazer depley automaticamento sempre que vc fazer um commit)
+
+como não estamos utilizando pwa (service-worker) podemos pular essa parte (mas se vc for utilizar, entre no site do create-react-app e veja como configurar)
+
+criar variaveis ambiente (github e github actions)
+
+rode um yarn build ou npm run build
+
+firebase deploy
+
+PRONTO, seu projeto está no ar!
+
+responsividade
+dark theme
+pwa
+outros banco de dados
+ESlint, prettier
+github
